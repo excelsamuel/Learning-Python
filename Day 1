@@ -1,0 +1,7 @@
+# This is a simple program that takes user input for name, age, and location, and then prints a greeting message using that information.
+name = input("What is your name?")
+age = input("How old are you?")
+location = input("Where do you stay?")
+
+print(f"Hello {name}, You are {age} years old and you stay at {location}.")
+

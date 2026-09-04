@@ -1,0 +1,5 @@
+#Variables
+name = "Dan"
+name = "Excel"
+
+print (name)
