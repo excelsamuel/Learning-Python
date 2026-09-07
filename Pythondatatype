@@ -13,7 +13,7 @@ print (type (z))
 
 # the output will auto dectect and tell us the data type of each above and should give something like...
 # <class 'int'>
-# <class 'str'>
+# <class 'str'> 
 # <class 'float'>
 
 
