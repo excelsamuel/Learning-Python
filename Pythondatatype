@@ -68,6 +68,7 @@ print (Dic.values())
 # BOOLEAN
 # Next let's test for Boolen and see the False and True thing
 # In Boolean 0 is false and anyother whole number is true
+print  ("This is the BOOLEAN Section")
 M = bool(1)
 N = bool(0)
 # let's know which is true or false
@@ -82,6 +83,7 @@ print (type(N))
 # SET
 # Next data type we working with is set
 #     SET Data are unsorted data and also permits editing a given set of data
+print ("Bellow shows How a set works")
 emp_set =()
 set_data = {'Exceled',28,'Daved'}
 print (set_data)
@@ -94,4 +96,39 @@ print (set_data)
 set_data.remove(28)
 # let's print again to see the diffrence
 print(set_data)
+
+
+
+# Type of conversion
+# we have two which are "Implicit and Explicit Type Conversion"
+
+# Let's see how Implicit Type Of Conversion works
+# In python it automatically convert one data type to another without the assistance of the User
+# For Example
+print("Implicit Type Of Conversion")
+num_int =25
+num_float = 25.5
+new_num = num_int + num_float
+print ("The Data Type Of num_int is:", type(num_int))
+print ("The Data Type Of num_float is:", type(num_float))
+print ("The Value Of new_num is:", new_num)
+print ("The Data Type of new_num is:", type(new_num))
+
+# Explicit Type Conversion
+# Here the user is involved and using something like Type casting
+# It involves the use of some pre-defined functions like "int()" "float()" "str()" etc
+# For Example, we gonna convert string to integer here
+print ("This is For Explicite Type of Data Conversion")
+E = 467
+F = "234"
+print ("The Data Type of E is:", type(E))
+print ("The Data Type of F is:", type(F))
+# Now let's type cast F telling it it's an Integer
+F = int(F)
+print ("After Type Casting F type is now:", type(F))
+sum = E + F
+print ("Sum of E and F is:", sum)
+# now let's see the data type of sum
+print ("Data Type of Sum is:", type(sum))
+
 
