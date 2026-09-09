@@ -132,3 +132,29 @@ print ("Sum of E and F is:", sum)
 print ("Data Type of Sum is:", type(sum))
 
 
+# OPERATORS
+# We have various Operators in Python 
+# Arithmetic Operators
+# Relational Operators
+# Assignment Operators 
+# Unary Operators 
+# Bitwise Operators
+# Logical Operators
+# Membership Operators
+# Identity Operators
+
+
+# Let's see Arithmetic Operators in Action
+print("This Is Arithmetric Operators In Action")
+C = 4
+D = 2
+# We already knows how Addition +, Miltiplication *, and Subtractions works
+DivisionOfCD = C/D
+print ("C divided by D is:", DivisionOfCD)
+ModulusOfCD = C % D
+print ("The Modulus of C and D is:", ModulusOfCD)
+SquareOfCbyD = C ** D
+print ("The Squre Of C by D is:", SquareOfCbyD)
+# Floor Division
+FloorDivision = C // D
+print ("The Floor Division Of C by D is:", FloorDivision)
