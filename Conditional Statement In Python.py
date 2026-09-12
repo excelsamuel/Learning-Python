@@ -1,3 +1,4 @@
+print ("Day 5 with Python Learning. 12/09/2026")
 #Conditional Statement In Python
 # we have: 
 # 1) if Statement
@@ -7,18 +8,19 @@
 # 5) Nested if else Statement
 
 
+print ("Welcome To Conditional Statement In Python Class")
 
 # Let's demostrate how the "if statement work"
 # It returns true if the condidtion is met
-print ("This is how if statement works")
+print ("This is section shows how if statement works")
 grade = int(input("My Grade is: "))
 if grade >= 50:
     print ("You have passed!!!")
 
 
-
+# if else statement
 # Next is to see how to use the "if else statement"
-print ("Next is how if else statement works")
+print ("Next section is how if else statement works")
 grade = int(input("My Grade is: "))
 if grade >= 50:
     print ("Congratulations you passed!!!")
@@ -72,10 +74,25 @@ for X in range(10):
 
 # Let's check for "Nested if statement"
 # for this nexted if statement, we have if statement inside of each other
+print ("Example for a Nested if Statement")
 num = int(input("Input your prefered number: "))
-if num < 500:
+if num <= 500:
     print (num, "is less than 500")
-    if num < 300:
-        print (num," is less than 300")
+    if num <= 300:
+        print (num," is also less than 300")
 else:
-    print (num, "")
+    print (num, "Is definatly above 500")
+
+
+
+# Here let's check for how "Nested if else Statement works"
+# In this statement there are multiple if and else statemenet in each other
+print ("Example for a Nested if else statement below")
+A = int(input("Reply with your preffered number: "))
+if A < 50:
+    if A % 3 == 0:
+        print (A, " is less than 50 and Divisible by 3")
+    else:
+        print (A, " is is less than 50 but not Divisible by 3")
+else:
+    print (A, " is above 50")
