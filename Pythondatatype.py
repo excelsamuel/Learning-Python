@@ -1,4 +1,4 @@
-# 07/09/2026
+# 07/09/2026 - 13/09/2026
 # This is @excelsamuel 's note
 # Learning the basic Data Types in python and how they works
 
@@ -158,3 +158,27 @@ print ("The Squre Of C by D is:", SquareOfCbyD)
 # Floor Division
 FloorDivision = C // D
 print ("The Floor Division Of C by D is:", FloorDivision)
+
+
+# Next is seeing Assignment Operators in Action
+print ("This shows how Assignment Operators Works")
+X = 5
+print ("X is =", X)
+X += 5
+print ("X + 5 =", X)
+X -= 5
+print ("X - 5 =", X)
+X *= 5
+print ("X * 5 =", X)
+X /= 5
+print ("X / 5 =", X)
+X %= 5
+print ("X % 5 =", X)
+# Let's declear X to be 5 again as the previous X is already Zero
+print ("Here X is redecleared to be equal to 5")
+X = 5
+X **= 5
+print ("X ** 5 =", X)
+X //= 5
+print ("X // 5 =", X)
+

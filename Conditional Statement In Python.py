@@ -96,3 +96,4 @@ if A < 50:
         print (A, " is is less than 50 but not Divisible by 3")
 else:
     print (A, " is above 50")
+    
