@@ -9,6 +9,9 @@
 
 # FOR LOOP
 # Let's say i can be from 1 to 9
+from unittest import skip
+
+
 print ("Checking how for loops works here")
 for i in range(10):
     print (f"Yes, i can be {i}")
@@ -49,6 +52,7 @@ sentence = 0
 while sentence < 10:
     print ("I AM ENJOYING LEARNING PYTHON")
     sentence += 1
+    # also same as 'sentence = sentence + 1
 
 
 
@@ -70,19 +74,80 @@ print ("The program was broken at: ", num)
 
 
 
+# For Loop
+# Can be trying to get numbers in a list like we did above for range
+# Also can be used to get values or keys or even both in a dictionary
+print ("This for loop is going to print out the numbers i have in a list")
+list = [2, 3, 4, 8, 9, 28, 39, 48]
+for num in list:
+    print (num)
+    print (f"Yes, the figure {num} is in thee list")
+
+
+# let's see dictionary example using 'for loop'
+# guess what we can even have a list in a dictionary and i will put that in this
+print ("This 'for loop' does pull out what we have in a dictionary")
+myDic = {
+    'CSC 101': 94,
+    'CSC 102': 78,
+    'Math 101': 65,
+    'PHY 101': 90,
+    'CSC 419': 89,
+    'Favourite Courses': ['CSC 101', 'PHY 101', 'CSC 419']
+}
+# Now let's print out only the subjects in the dictionary
+for subject in myDic.keys():
+    print (f"{subject} is one of the subjects taken")
+# How about we try geting only the scores we have in the dictionary?
+for scores in myDic.values():
+    print (f"Yes, {scores} is one of the scores")
+# let's try getting both the subjects and keys right?
+for subject, scores in myDic.items():
+    print (f"In {subject} your score is: {scores}")
 
 
 
+# Nested For Loop
+# More like nested If statement we did last weeek, here we will have a "for loop" inside another
+print ("AN example of 'Nested For Loop'")
+print ("This Will pair two diffrent list together")
+swallow = ['Eba', 'Amala', 'Semo', 'Pounded Yam']
+soup = ['Egussi', 'Ewedu', 'Efo', 'Okro']
+# Now let's pair swallow with each stew giving customers what we can offer in a local resurant
+for swa in swallow:
+    for sou in soup:
+        print (f"Yes, you can order {swa} with {sou}")
 
 
 
+# CONTINUE STATEMENT
+# Basicaly skips the current condition of the iteration
+# For example let us print frist 5 integers and we skip number 3
+for int in range(5):
+    if int == 3:
+        print ("Move to the next")
+        continue
+    print (int)
 
 
 
+# Let's try this continue statement for a real life example
+# A sum we have 100 cups of cake to sell
+# So we have to skip others that request us to deliver more than 100
+# But we still need to sell other remaining that is less than 100
 
-
-
-
+cost = 5.97
+cupOFcake = 100
+# while we still have more than 0 cup cakes let's take order
+while cupOFcake > 0:
+    order = float(input("How Many Cups OF Cakes Are You Buying today? "))
+# if we don't have up to the requested cup of cakes let's skip and take another order
+    if order > cupOFcake:
+        print ("Sorry, your order is above what's left.")
+        continue
+    print (f"You ordered for {order} Cups of Cake and the total is: {order * cost}")
+    cupOFcake = cupOFcake - order
+print ("Sorry, No Cakes left. We love you at Exceled Cakes")
 
 
 
