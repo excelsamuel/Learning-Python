@@ -9,7 +9,6 @@
 
 # FOR LOOP
 # Let's say i can be from 1 to 9
-from unittest import skip
 
 
 print ("Checking how for loops works here")
@@ -151,8 +150,35 @@ print ("Sorry, No Cakes left. We love you at Exceled Cakes")
 
 
 
+# Quicly a for loop to print integers withing a particular range
+print ("Below are the integers between 3 and 10")
+num = 10
+for i in range (3, num):
+    print (i)
 
 
+# let's again use for loop to multiply a list and a particular number
+list1 = [2, 4, 6, 8, 10]
+by = 5
+for i in list1:
+    print (f"{i} multiply by {by} is: ", i * by) 
+
+# Another more explanatory way
+print (" ")
+list1 = [2, 4, 6, 8, 10]
+by = 5
+for i in list1:
+    mul = i * by
+    print (f"{i} multiply by {by} is: {mul}")
+
+
+
+# While Loop
+print ("Here is using while loop to count from 0 to 20")
+count = 0
+while (count < 21):
+    print (f"Now we are at count: {count}")
+    count = count + 1
 
 
 
