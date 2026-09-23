@@ -121,3 +121,49 @@ for classname in classnames:
         print (classname, end= " ")
         count = count + 1
     print (" ")
+
+
+
+# What if we print patterns like we did earler
+# But now we are using numbers and the numbers would even be increasing
+print ("Using for loop to print number patterns")
+row = 10
+for i in range (0, row + 1):
+    for j in range (0, i + 1):
+        print (j, end= " ")
+    print ()
+
+
+# Let's see break in action again
+# Let's asume there is a long list and we only want to print the first 6 integers in the list
+numberss = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+sum_num = 0
+count = 0
+for i in numberss:
+    sum_num = sum_num + i
+    count = count + 1
+    if count == 6:
+        break
+print (f"The sum of the first {count} integers is: {sum_num}")
+
+
+
+# Continue Statement
+# It's more like telling you to skip a particular iteration if condition is met
+# It dosent stop or terminate the whole loop, just jumps 
+# Let's see that with printing first 10 integers and Jumping the number 5
+print ("This is an example of 'continue' statement and we are to skip the figure 5")
+for i in range (10):
+    if i == 5:
+        continue
+    print (i)
+
+
+# Let's try same thing again for multiple numbers for example
+print ("Here we will skip number 3 and 8 using Continue Statement")
+for i in range (10):
+    if (i == 3 or i == 8):
+        continue
+    print (i, "is not 3 nor is it 8")
+
+
