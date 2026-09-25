@@ -180,9 +180,34 @@ add = lambda X, Y: X + Y
 
 print (add (2, 5))
 
+
 # let me use the same lambda to find if and integer is greater than the other
 diffrence_max = lambda X, Y: X if X > Y else Y 
 
-print ("The",diffrence_max (9, 6))
+print("The",diffrence_max (9, 6))
+
 
 # Next let's do the opposite and get the minimum number between two variables
+# Still using the same example we use last
+diffrence_min = lambda X, Y: X if X < Y else Y
+
+print("The smallest number is: ", diffrence_min(9, 2))
+
+
+# Let's use the same lambda concatenate some srings
+# This will have us combine both last name and first name of someone
+full_name = lambda first_name, last_name: first_name + " " + last_name
+
+print(full_name("Excel", "Dvae"))
+
+
+# Let's use lambda again to know if a variable is even
+even_num = lambda x: "Number is even" if x % 2 == 0 else "Number is odd"
+
+print(even_num (8))
+
+
+# Using lambda agaim let's verify if someone is or above 18 years
+age_verify = lambda x: "Good you are 18 or above 18" if x >= 18 else "Nahhh you can't enter this site"
+
+print(age_verify (19))
