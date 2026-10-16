@@ -88,3 +88,8 @@ print("Cities served by both regions:", north & south)
 print("Cities served only by the North:", north - south)
 print("Cities served only by the South:", south - north)
 print("Cities served by either region but not both:", north ^ south)
+
+
+print(dict(zip('abc',[1,2,3])).values())
+d = {'a':1}; d['b'] = d.get('b', 2); print(d)
+d = {'a':1, 'b':2}; d['a'] += d['b']; print(d)
